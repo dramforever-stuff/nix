@@ -347,6 +347,13 @@
               )).componentTests
             )
         // devFlake.checks.${system} or { }
+        // lib.genAttrs [
+          "functional_user"
+          "functional_trusted"
+          "functional_root"
+          "functional_symlinked-home"
+          "functional_unprivileged-daemon"
+        ] (attr: self.hydraJobs.tests.functional_user)
       );
 
       packages = forAllSystems (

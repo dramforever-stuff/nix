@@ -1,0 +1,10 @@
+builds:
+  exclude: []
+  include:
+    - "packages.x86_64-linux.nix"
+    - "packages.aarch64-linux.nix"
+    - "checks.x86_64-linux.functional_user"
+    - "checks.x86_64-linux.functional_trusted"
+    - "checks.x86_64-linux.functional_root"
+    - "checks.x86_64-linux.functional_symlinked-home"
+    - "checks.x86_64-linux.functional_unprivileged-daemon"
